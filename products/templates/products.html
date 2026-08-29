@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    {% extends "layout/header.html" %}
+   {% comment %} {% extends "layout/header.html" %}
 
     {% block navbar %}
 
@@ -26,7 +17,7 @@
 
             <a href="contact.html">Contact</a>
 
-            <a href="login.html">Login out</a>
+            <a href="login.html">Log out</a>
 
             <a href="cart.html" class="cart-link">
                 🛒 Cart
@@ -37,258 +28,15 @@
 
     </header>
 
-    {% endblock %}
+    {% endblock %} {% endcomment %}
 
 
+    {% include "layout/header.html" %}
+    {% include "layout/footer.html" %}
 
-<section class="product-hero">
+    
 
-    <div>
-        <span>OUR COLLECTION</span>
+    
 
-        <h1>
-            Discover Something<br>
-            <b>You’ll Love.</b>
-        </h1>
 
-        <p>
-            Explore our premium collection of fashion,
-            beauty, accessories and lifestyle products.
-        </p>
-    </div>
 
-</section>
-
-
-<section class="products">
-
-    <div class="heading">
-        <span>SHOP COLLECTION</span>
-        <h2>Featured Products</h2>
-    </div>
-
-
-    <div class="filter">
-
-        <button>All</button>
-        <button>Fashion</button>
-        <button>Beauty</button>
-        <button>Footwear</button>
-        <button>Accessories</button>
-
-    </div>
-
-
-    <div class="product-grid">
-
-
-        <div class="card">
-
-            <div class="image">
-
-                <span>NEW</span>
-
-                <strong>♡</strong>
-
-                <div>👗</div>
-
-            </div>
-
-            <div class="details">
-
-                <small>FASHION</small>
-
-                <h3>Elegant Summer Dress</h3>
-
-                <p class="rating">
-                    ★★★★★ <i>(124)</i>
-                </p>
-
-                <div class="price">
-                    ₹1,499
-                    <del>₹2,499</del>
-                </div>
-
-                <a href="cart.html">Add to Cart</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="image">
-
-                <span>SALE</span>
-
-                <strong>♡</strong>
-
-                <div>👜</div>
-
-            </div>
-
-            <div class="details">
-
-                <small>ACCESSORIES</small>
-
-                <h3>Premium Handbag</h3>
-
-                <p class="rating">
-                    ★★★★★ <i>(98)</i>
-                </p>
-
-                <div class="price">
-                    ₹1,899
-                    <del>₹3,299</del>
-                </div>
-
-                <a href="cart.html">Add to Cart</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="image">
-
-                <span>TRENDING</span>
-
-                <strong>♡</strong>
-
-                <div>👟</div>
-
-            </div>
-
-            <div class="details">
-
-                <small>FOOTWEAR</small>
-
-                <h3>Classic Sneakers</h3>
-
-                <p class="rating">
-                    ★★★★★ <i>(156)</i>
-                </p>
-
-                <div class="price">
-                    ₹2,199
-                    <del>₹3,499</del>
-                </div>
-
-                <a href="cart.html">Add to Cart</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="image">
-
-                <span>POPULAR</span>
-
-                <strong>♡</strong>
-
-                <div>💄</div>
-
-            </div>
-
-            <div class="details">
-
-                <small>BEAUTY</small>
-
-                <h3>Luxury Beauty Kit</h3>
-
-                <p class="rating">
-                    ★★★★★ <i>(210)</i>
-                </p>
-
-                <div class="price">
-                    ₹999
-                    <del>₹1,599</del>
-                </div>
-
-                <a href="cart.html">Add to Cart</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="image">
-
-                <span>NEW</span>
-
-                <strong>♡</strong>
-
-                <div>⌚</div>
-
-            </div>
-
-            <div class="details">
-
-                <small>ACCESSORIES</small>
-
-                <h3>Minimal Smart Watch</h3>
-
-                <p class="rating">
-                    ★★★★★ <i>(87)</i>
-                </p>
-
-                <div class="price">
-                    ₹2,999
-                    <del>₹4,999</del>
-                </div>
-
-                <a href="cart.html">Add to Cart</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="image">
-
-                <span>SALE</span>
-
-                <strong>♡</strong>
-
-                <div>👚</div>
-
-            </div>
-
-            <div class="details">
-
-                <small>FASHION</small>
-
-                <h3>Casual Top</h3>
-
-                <p class="rating">
-                    ★★★★★ <i>(76)</i>
-                </p>
-
-                <div class="price">
-                    ₹799
-                    <del>₹1,299</del>
-                </div>
-
-                <a href="cart.html">Add to Cart</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</body>
-</html>
