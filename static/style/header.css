@@ -1,0 +1,127 @@
+/* ==========================================
+   LUXORA HOME PAGE
+   SOFT PINK + CREAM THEME
+   NO JAVASCRIPT
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff8f5;
+    color: #4a3f43;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+    height: 78px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #f3dfe5;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    animation: slideDown 0.7s ease;
+}
+
+.logo,
+.footer-logo {
+    font-size: 31px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    color: #d98ba5;
+}
+
+.logo span,
+.footer-logo span {
+    color: #c87996;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+
+    color: #55484d;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 10px 14px;
+
+    border-radius: 25px;
+
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d98ba5,
+            #eab4c5
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(217, 139, 165, 0.25);
+}
+
+.cart-link {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+
+    top: -5px;
+    right: -2px;
+
+    width: 19px;
+    height: 19px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #c87996;
+
+    color: white;
+
+    font-size: 10px;
+}
+
+
